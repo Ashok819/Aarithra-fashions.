@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Collections — Aarithra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Aarithra fashions<span class="logo-dot">.</span></a>
+      <nav class="nav">
+        <a href="collections.html">Collections</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="collections">
+      <h1>Collections</h1>
+      <p class="lead">Explore seasonal looks. Click to preview.</p>
+
+      <div class="collections-grid" id="collectionsGrid">
+        <!-- Add more items or render from CMS -->
+        <button class="card" data-full="images/collection1.jpg" aria-label="Open collection 1">
+          <img src="IMG_20250611_143610 (1).png" alt="Collection 1" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+        <button class="card" data-full="images/collection2.jpg" aria-label="Open collection 2">
+          <img src="Snapchat-630145445 (1).png" alt="Collection 2" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+        <button class="card" data-full="images/collection3.jpg" aria-label="Open collection 3">
+          <img src="InShot_20250620_194652579__02 (1)-1.png" alt="Collection 3" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+                <button class="card" data-full="images/collection3.jpg" aria-label="Open collection 3">
+          <img src="IMG-20250721-WA0096 (1).png" alt="Collection 3" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+                <button class="card" data-full="images/collection3.jpg" aria-label="Open collection 3">
+          <img src="IMG_20250810_162650 (1).png" alt="Collection 3" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+                <button class="card" data-full="images/collection3.jpg" aria-label="Open collection 3">
+          <img src="IMG_20250731_134846 (1).png" alt="Collection 3" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+                <button class="card" data-full="images/collection3.jpg" aria-label="Open collection 3">
+          <img src="IMG_20250702_112456_299 (1).png" alt="Collection 3" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+                <button class="card" data-full="images/collection3.jpg" aria-label="Open collection 3">
+          <img src="IMG_20250702_111123_266.png" alt="Collection 3" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+                <button class="card" data-full="images/collection3.jpg" aria-label="Open collection 3">
+          <img src="IMG_20250702_105416 (1).png" alt="Collection 3" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+      
+
+        </button>
+                <button class="card" data-full="images/collection3.jpg" aria-label="Open collection 3">
+          <img src="Snapchat-483708476 (2).png" alt="Collection 3" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+
+         <button class="card" data-full="images/collection1.jpg" aria-label="Open collection 1">
+          <img src="Snapchat-1449466969 (2).png" alt="Collection 1" loading="lazy">
+          <span class="card-meta"></span>
+        </button>
+      
+
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightbox-img" loading="lazy">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span>Aarithra fashions</p>
+    </div>
+  </footer>
+</body>
+</html>

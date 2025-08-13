@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aarithra_fashions</title>
+  <meta name="description" content="Luxury bespoke fashion by Brand Name" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Aarithra fashions<span class="logo-dot">.</span></a>
+      <nav class="nav">
+        <a href="collections.html">Collections</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="brand-heading">Bespoken couture &#x1F457; handcrafted with soul</h1>
+          <p class="lead">Elevated silhouettes. Timeless fabrics. Personal fittings.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="collections.html">View Collections</a>
+            <a class="btn outline" id="whatsapp-cta" href="https://wa.me/91XXXXXXXXXX?text=Hello%20Brand%20Name%2C%20I%20would%20like%20to%20inquire%20about%20your%20collections." target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <!-- Placeholder image - replace with a 9:16 portrait -->
+          <img src="IMG_4601.PNG" alt="Model wearing couture" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (small) -->
+    <section class="about container">
+      <div class="about-inner">
+        <h2>About the Atelier</h2>
+        <p>We create custom garments with a focus on fit, craftsmanship and a whisper of delicate drama. Book a private consultation or shop our seasonal collections.</p>
+      </div>
+    </section>
+
+    <!-- 9:16 GALLERY PREVIEW -->
+    <section class="gallery container">
+      <h2>Selected Looks</h2>
+      <div class="gallery-grid" id="gallery">
+        <!-- Each .card keeps 9:16 ratio. Replace src with your images. -->
+        <button class="card" data-full="images/look1.jpg" aria-label="Open look 1">
+          <img src="IMG_4608_rename.PNG" alt="Look 1" loading="lazy">
+          <span class="card-meta">Bridal</span>
+        </button>
+
+        <button class="card" data-full="images/look2.jpg" aria-label="Open look 2">
+          <img src="IMG_4610_lavender.PNG" alt="Look 2" loading="lazy">
+          <span class="card-meta">Couture</span>
+        </button>
+
+        <button class="card" data-full="images/look3.jpg" aria-label="Open look 3">
+          <img src="IMG_4611_purple.PNG" alt="Look 3" loading="lazy">
+          <span class="card-meta">Ready-to-wear</span>
+        </button>
+
+        <button class="card" data-full="images/look4.jpg" aria-label="Open look 4">
+          <img src="IMG_4601.PNG" alt="Look 4" loading="lazy">
+          <span class="card-meta">Evening</span>
+        </button>
+      </div>
+      <div class="gallery-actions">
+        <a class="btn primary" href="collections.html">See full collection</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Contact & Booking</h2>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>Your name</span>
+            <input type="text" name="name" required placeholder="Jane Doe">
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required placeholder="Tell us about your event or inquiry"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send inquiry</button>
+            <a class="btn outline" href="https://wa.me/918904568521?text=Hello%20Brand%20Name%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <h3>Studio</h3>
+          <p>Private consultations by appointment only.<br>Location: Bangalore </p>
+          <p><strong>Phone:</strong> <a href="tel:+918904568521">&#9742;</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightbox-img" loading="lazy">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aarithra. Crafted with care.</p>
+    </div>
+  </footer>
+</body>
+</html>
